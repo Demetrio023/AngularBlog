@@ -1,0 +1,13 @@
+.big-card{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    margin-left: 25px;
+    width: 96%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid  rgb(38, 37, 37);
+}

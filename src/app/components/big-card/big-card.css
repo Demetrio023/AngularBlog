@@ -1,0 +1,29 @@
+.content-big-card{
+    
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+ 
+  
+    
+   
+
+}
+
+p{
+    margin-top: 10px;
+    color: rgb(97, 95, 95);
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    text-align: start;
+}
+img{
+    height:300px ;
+    width: 125%;
+}
+h1{
+    width: 90%;
+    font-size: 30px;
+}

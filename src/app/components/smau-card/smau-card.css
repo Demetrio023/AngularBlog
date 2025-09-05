@@ -1,0 +1,38 @@
+
+.smau{
+    width: 700px;
+    margin-left: 25px;
+    display: flex;
+  
+    height: 145px;
+    
+    
+    
+}
+.smauTile{
+    display: flex;
+    
+    
+    justify-self: start;;
+    flex-direction: column;
+   
+    width: 800px;
+     margin-left: 20px;
+}
+    
+
+
+h1{
+    font-size: 18px;
+    color: white;
+}
+span{font-size: 15px;
+ color: gray;}
+
+ .smau-photo img{
+    height: 100%;
+    width: 175px;
+  
+
+    margin-bottom: 10px;
+ }

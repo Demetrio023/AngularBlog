@@ -1,0 +1,19 @@
+.content-title h1{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Segoe UI';/* Tahoma, Geneva, Verdana, sans-serif;*/
+    letter-spacing: 0.3rem;
+   
+}.content-title hr{
+    border: 1px solid  rgb(42, 41, 41);
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 5;
+        
+    } .content-title{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
