@@ -1,4 +1,7 @@
-# AngularBlog
+# Meu Projeto Angular
+Projeto de blog feito em Angular 🚀  
+
+🔗 [Clique aqui para ver rodando](angularblog.netlify.app)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
 
