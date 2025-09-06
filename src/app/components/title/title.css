@@ -1,7 +1,10 @@
 .content-title h1{
+   padding: -10px;
+    margin-top:15PX;
+    background-color:#ED1D24 ;
     color: white;
     text-align: center;
-    font-size: 100px;
+    font-size: 130px;
     font-family: 'Segoe UI';/* Tahoma, Geneva, Verdana, sans-serif;*/
     letter-spacing: 0.3rem;
    
