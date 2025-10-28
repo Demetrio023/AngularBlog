@@ -1,16 +1,25 @@
-<div class="smau">
+<div class="smau" (click)="navigateToArticle()">
     <div class="smau-photo">
-        <img src="{{photoCover}}" alt="" srcset="">
+        <img [src]="photoCover" [alt]="title" srcset="">
      
     </div>
 
     <div class="smauTile">
-
-        <span>autor</span>
-    <br>
-    <h1>{{title}}</h1>
+        <div class="article-meta">
+            <span class="category">{{ category }}</span>
+            @if (readTime) {
+                <span class="separator">•</span>
+                <span class="read-time">{{ readTime }}</span>
+            }
+        </div>
+        <h1 class="title">{{ title }}</h1>
+        @if (description) {
+            <p class="description">{{ description }}</p>
+        }
+        <div class="read-more">
+            <span>Ler mais →</span>
+        </div>
     </div>
-    
     
 </div>
 

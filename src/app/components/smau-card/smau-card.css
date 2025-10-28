@@ -1,38 +1,152 @@
 
 .smau{
-    width: 700px;
-    margin-left: 25px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     display: flex;
-  
     height: 145px;
-    
-    
-    
+    background: rgba(25, 25, 25, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
 }
-.smauTile{
-    display: flex;
-    
-    
-    justify-self: start;;
-    flex-direction: column;
-   
-    width: 800px;
-     margin-left: 20px;
+
+.smau:hover {
+    transform: translateX(5px);
+    background: rgba(35, 35, 35, 0.6);
 }
-    
 
-
-h1{
-    font-size: 30px;
-    color: white;
+.smau-photo {
+    flex-shrink: 0;
+    overflow: hidden;
 }
-span{font-size: 15px;
- color: gray;}
 
- .smau-photo img{
+.smau-photo img{
     height: 100%;
     width: 175px;
-  
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
 
-    margin-bottom: 10px;
- }
+.smau:hover .smau-photo img {
+    transform: scale(1.05);
+}
+
+.smauTile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.category {
+    color: #007ACC;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.read-time {
+    color: rgb(101, 101, 100);
+}
+
+.separator {
+    color: rgb(101, 101, 100);
+}
+
+.title {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.description {
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more span {
+    color: #007ACC;
+    font-size: 12px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.smau:hover .read-more span {
+    color: #0099ff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .smau {
+        height: auto;
+        min-height: 120px;
+        margin: 0 10px;
+    }
+    
+    .smau-photo img {
+        width: 140px;
+    }
+    
+    .smauTile {
+        padding: 12px 15px;
+    }
+    
+    .title {
+        font-size: 16px;
+    }
+    
+    .description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .smau {
+        flex-direction: column;
+        height: auto;
+        margin: 0 5px;
+    }
+    
+    .smau-photo img {
+        width: 100%;
+        height: 120px;
+    }
+    
+    .smauTile {
+        padding: 12px;
+    }
+    
+    .title {
+        font-size: 16px;
+        -webkit-line-clamp: 3;
+    }
+    
+    .article-meta {
+        margin-bottom: 6px;
+    }
+}

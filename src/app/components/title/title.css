@@ -1,22 +1,88 @@
+.content-title {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
 .content-title h1{
-   padding: -10px;
-    margin-top:15PX;
-    background-color:#ED1D24 ;
+    padding: 20px 40px;
+    margin: 0;
+    background: linear-gradient(135deg, #ED1D24 0%, #C41E3A 100%);
     color: white;
     text-align: center;
     font-size: 130px;
-    font-family: 'Segoe UI';/* Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
     letter-spacing: 0.3rem;
-   
-}.content-title hr{
-    border: 1px solid  rgb(42, 41, 41);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(237, 29, 36, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-title h1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 48px rgba(237, 29, 36, 0.4);
+}
+
+.content-title hr{
+    border: 1px solid rgb(42, 41, 41);
     width: 95%;
-    margin-top: 20px;
-    margin-bottom: 5;
-        
-    } .content-title{
-        flex-direction: column;
-        display: flex;
-        align-items: center;
+    max-width: 1200px;
+    margin: 20px 0;
+    background: linear-gradient(90deg, transparent, rgb(42, 41, 41), transparent);
+}
+
+/* Media Queries */
+@media (max-width: 968px) {
+    .content-title h1 {
+        font-size: 100px;
+        padding: 18px 35px;
     }
+}
+
+@media (max-width: 768px) {
+    .content-title {
+        margin: 15px 0;
+        padding: 0 15px;
+    }
+    
+    .content-title h1 {
+        font-size: 80px;
+        padding: 15px 30px;
+        letter-spacing: 0.2rem;
+    }
+    
+    .content-title hr {
+        width: 90%;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-title {
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+    
+    .content-title h1 {
+        font-size: 60px;
+        padding: 12px 20px;
+        letter-spacing: 0.15rem;
+    }
+    
+    .content-title hr {
+        width: 85%;
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .content-title h1 {
+        font-size: 48px;
+        padding: 10px 16px;
+        letter-spacing: 0.1rem;
+    }
+}
     

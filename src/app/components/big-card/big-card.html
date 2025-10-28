@@ -1,23 +1,29 @@
-<div class="content-big-card">
+<div class="content-big-card" (click)="navigateToArticle()">
 
     <div class="big-card-photo">
         
-     <img src="{{photoCover}}"
-      alt="" srcset="" >
+     <img [src]="photoCover"
+      [alt]="title" srcset="" >
 
     </div>
 
     <div class="big-card-title">
-        <span style="color: rgb(101, 101, 100); font-size: 20px;">autor</span>
-        <h1 style="color: white;">{{title}}</h1>
+        <div class="article-meta">
+            <span class="author">{{ author }}</span>
+            <span class="separator">•</span>
+            <span class="date">{{ getFormattedDate() }}</span>
+            <span class="separator">•</span>
+            <span class="read-time">{{ readTime }}</span>
+        </div>
+        <h1 class="title">{{ title }}</h1>
 
     </div>
 
     <div class="big-card-description">
-        <p>{{description}}</p>
-
+        <p>{{ description }}</p>
+        <div class="read-more">
+            <span>Clique para ler mais →</span>
+        </div>
     </div>
-
-
 
 </div>

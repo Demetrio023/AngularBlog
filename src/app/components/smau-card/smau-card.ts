@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-smau-card',
@@ -17,5 +18,17 @@ export class SmauCard implements OnInit{
   title: string = '';
   @Input()
   description: string = '';
+  @Input()
+  category: string = '';
+  @Input()
+  readTime: string = '3 min';
+  @Input()
+  articleId: number = 1;
 
+  constructor(private router: Router) {}
+
+  // Navigate to article page
+  navigateToArticle(): void {
+    this.router.navigate(['/article', this.articleId]);
+  }
 }
